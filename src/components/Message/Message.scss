@@ -1,0 +1,56 @@
+@import "../../styles/variables";
+
+.chat__post {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: $dark-background;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  // transition: transform 2;
+
+  &--left {
+    background-color: darken($header-color, 10%);
+    // align-self: flex-start;
+    max-width: 40%;
+    transform: translateX(+140%);
+    text-align: right;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  &--right {
+    background-color: darken($reply-color, 10%);
+    // align-self: flex-end;
+    // justify-content: flex-end;
+    max-width: 40%;
+    transform: translateX(20px);
+    text-align: left;
+  }
+}
+
+.chat__post-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+
+  &--user {
+    color: $header-color;
+    font-weight: bold;
+  }
+
+  &--reply {
+    color: $reply-color;
+    font-weight: bold;
+  }
+}
+
+.chat__post-name,
+.chat__post-time,
+.chat__post-text {
+  margin: 0;
+  color: $text-color;
+}

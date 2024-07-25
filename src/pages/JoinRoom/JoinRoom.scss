@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+
+.joinRoom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $background-color;
+  color: $text-color;
+}

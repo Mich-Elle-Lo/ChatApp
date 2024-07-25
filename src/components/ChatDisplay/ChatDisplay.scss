@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.chat__display {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  width: 100%;
+  height: 70vh;
+  // max-width: 600px;
+  background-color: $light-background;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  // max-height: 400px;
+}

@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+
+.chat__form--message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  background-color: $light-background;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.chat__input--message {
+  margin-right: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #555555;
+  width: 100%;
+  // max-width: 300px;
+  transition: border-color 0.3s;
+  background-color: $dark-background;
+  color: $text-color;
+
+  &:focus {
+    border-color: $primary-color;
+    outline: none;
+  }
+}
+
+.chat__button--send {
+  padding: 0.75rem 1.5rem;
+  background-color: $primary-color;
+  color: $text-color;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}

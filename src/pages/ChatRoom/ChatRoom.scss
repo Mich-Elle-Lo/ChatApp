@@ -1,0 +1,34 @@
+@import "../../styles/variables";
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: $background-color;
+  color: $text-color;
+  min-height: 100vh;
+  min-width: 35rem;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    padding: 1rem;
+    width: 80%;
+  }
+}
+
+.chat__users,
+.chat__activity {
+  margin: 0.5rem 0;
+  background-color: $light-background;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+}
+
+.chat__activity {
+  max-width: 100%;
+}
