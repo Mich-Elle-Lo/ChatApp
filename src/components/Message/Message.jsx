@@ -4,7 +4,7 @@ const Message = ({ msg, username }) => {
   const { name, text, time } = msg;
 
   const messageClassName = `chat__post ${
-    name === username ? "chat__post--left" : "chat__post--right"
+    name === username ? "chat__post--right" : "chat__post--left"
   }`;
 
   return (

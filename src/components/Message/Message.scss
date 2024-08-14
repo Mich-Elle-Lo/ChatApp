@@ -13,22 +13,24 @@
   // transition: transform 2;
 
   &--left {
-    background-color: darken($header-color, 10%);
+    background-color: darken($reply-color, 10%);
+
     // align-self: flex-start;
     max-width: 40%;
-    transform: translateX(+140%);
-    text-align: right;
+    transform: translateX(20px);
+
+    text-align: left;
     text-wrap: wrap;
     flex-wrap: wrap;
   }
 
   &--right {
-    background-color: darken($reply-color, 10%);
+    background-color: darken($header-color, 10%);
     // align-self: flex-end;
     // justify-content: flex-end;
     max-width: 40%;
-    transform: translateX(20px);
-    text-align: left;
+    transform: translateX(+140%);
+    text-align: right;
   }
 }
 
