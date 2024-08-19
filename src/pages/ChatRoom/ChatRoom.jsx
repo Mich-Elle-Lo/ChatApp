@@ -71,16 +71,21 @@ const ChatRoom = () => {
 
   return (
     <div className="chat">
-      <ChatDisplay messages={messages} username={username} />
-      <p className="chat__users">
-        <em>Users in {room}:</em> {userList}
-      </p>
-      <p className="chat__activity">{activity}</p>
-      <MessageForm
-        message={message}
-        handleInput={handleInput}
-        handleMessageForm={handleMessageForm}
-      />
+      <div className="chat__main">
+        <h2 className="chat__room">Room: {room}</h2>
+        <ChatDisplay messages={messages} username={username} />
+        <p className="chat__activity">{activity}</p>
+        <MessageForm
+          message={message}
+          handleInput={handleInput}
+          handleMessageForm={handleMessageForm}
+        />
+      </div>
+      <div className="chat__side">
+        <p className="chat__users">
+          <em>Users in {room}:</em> {userList}
+        </p>
+      </div>
     </div>
   );
 };
