@@ -1,4 +1,5 @@
 import { useState } from "react";
+import WelcomeDisplay from "../../components/WelcomeDisplay/WelcomeDisplay";
 import JoinForm from "../../components/JoinForm/JoinForm";
 import { useNavigate } from "react-router-dom";
 import "./JoinRoom.scss";
@@ -12,6 +13,7 @@ const JoinRoom = () => {
 
   return (
     <div className="joinRoom">
+      <WelcomeDisplay />
       <JoinForm handleJoin={handleJoin} />
     </div>
   );
